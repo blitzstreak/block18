@@ -29,7 +29,7 @@ function createAccount(email,password){
 }
 
 
-function googleEmail(email){
+function googleEmail(email, verificationCode){
     if(email.length===0 || verificationCode===0) { 
         return false
     }else if(email==="antixlag@exampleemail.com" && verificationCode==="3 2 1 5 4"){

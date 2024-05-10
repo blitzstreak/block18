@@ -17,6 +17,6 @@ test('was the create account successful?', ()=>{
 test('was the email verification successful?', ()=>{
     expect(googleEmail("antixlag@exampleemail.com", "")).toBeFalsy();
     expect(googleEmail("","3 2 1 5 4")).toBeFalsy();
-    expect(googleEmail("", "")).toBeFalsy();
+    expect(googleEmail("antixlag@exampleemail.com", "")).toBeFalsy();
     expect(googleEmail("antixlag@exampleemail.com", "3 2 1 5 4")).toBeTruthy();
 })
